@@ -14,7 +14,7 @@ public class MongoDemo {
 	@Autowired
 	private MongoTemplate mongoTemplate;
 	public void start(){
-		System.out.println("ceshi*************");
+		System.out.println("************************************测试************************************");
 		
 		Criteria criatira = new Criteria();
 		criatira.andOperator(Criteria.where("age").gt(10));
@@ -23,6 +23,6 @@ public class MongoDemo {
 			System.out.println(MessageFormat.format("用户名：{0}，年龄：{1}，创建时间：{2}",
 					user.getName(),user.getAge(),user.getTime()));
 		}
-		
+		System.out.println("************************************end************************************");
 	}
 }
