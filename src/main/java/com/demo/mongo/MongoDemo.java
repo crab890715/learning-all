@@ -23,6 +23,9 @@ public class MongoDemo {
 			System.out.println(MessageFormat.format("用户名：{0}，年龄：{1}，创建时间：{2}",
 					user.getName(),user.getAge(),user.getTime()));
 		}
+//		for(int i=0;i<1000;i++){
+//			ThreadPoolUtils.getExecutor().execute(new UserRunable(mongoTemplate,i));
+//		}
 		System.out.println("************************************end************************************");
 	}
 }

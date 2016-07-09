@@ -18,5 +18,6 @@
             <constructor-arg ref="mongo"/>  
             <constructor-arg name="databaseName" value="${mongo.demo.dbname}"/>  
     </bean>  
-	 <bean id="mongoDemo" class="com.demo.mongo.MongoDemo" init-method="start" lazy-init="false"></bean>  
+	 <bean id="mongoDemo" class="com.demo.mongo.MongoDemo" init-method="start" lazy-init="false"></bean>
+	 <bean id="threadPoolUtils" class="com.demo.mongo.utils.ThreadPoolUtils" init-method="create" lazy-init="false"></bean>  
 </beans>
