@@ -1,4 +1,4 @@
-package com.demo.client.handle;
+package com.demo.mongo.handle;
 
 import java.text.MessageFormat;
 import java.util.Random;
